@@ -1,9 +1,5 @@
 name: PR Test
 
-permissions:
-    checks: write
-    contents: read
-# tests
 on:
     pull_request:
         branches:
@@ -11,6 +7,10 @@ on:
 
 jobs:
     test:
+        permissions:
+            checks: write
+            contents: read
+
         runs-on: ubuntu-latest
 
         steps:
