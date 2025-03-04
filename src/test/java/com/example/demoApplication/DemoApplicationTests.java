@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class DemoApplicationTests extends UsingTestContainerTest {
 
 	@Autowired
 	TestForTest testForTest;
@@ -13,6 +13,7 @@ class DemoApplicationTests {
 	@Test
 	void success1() {
 		testForTest.successTest();
+		testForTest.repoTest();
 
 	}
 
