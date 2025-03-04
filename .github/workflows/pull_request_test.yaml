@@ -3,7 +3,7 @@ name: PR Test
 permissions:
     checks: write
     contents: read
-
+# tests
 on:
     pull_request:
         branches:
