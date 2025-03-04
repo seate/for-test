@@ -42,7 +42,7 @@ jobs:
             - name: Make application-test.yaml
               run: |
                 cd ./src/test/resources
-                touch ./application-test.yaml
+                touch ./application-test.yml
                 echo "${{ secrets.test_application_yml }}" > ./application-test.yml
               shell: bash
 
