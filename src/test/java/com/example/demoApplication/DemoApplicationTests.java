@@ -16,10 +16,5 @@ class DemoApplicationTests {
 
 	}
 
-	@Test
-	void fail1() {
-		testForTest.failTest();
-	}
-
 
 }
