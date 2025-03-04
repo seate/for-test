@@ -39,6 +39,13 @@ jobs:
                   java-version: '21'
                   distribution: 'corretto'
 
+            - name: Make application-test.yaml
+              run: |
+                cd ./src/test/resources
+                touch ./application-test.yaml
+                echo "${{ secrets.test_application_yml }}" > ./application-test.yml
+              shell: bash
+
             - name: Grant execute permission for gradlew
               run: chmod +x gradlew
 
