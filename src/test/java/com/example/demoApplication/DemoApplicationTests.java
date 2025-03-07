@@ -20,6 +20,7 @@ class DemoApplicationTests extends UsingTestContainerTest {
 		testForTest.repoTest();
 
 		System.out.println("yes: " + yes);
+		throw new RuntimeException("fail for graphql test");
 	}
 
 
